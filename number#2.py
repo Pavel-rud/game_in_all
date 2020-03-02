@@ -1,6 +1,7 @@
 import pygame
 import sys
 print("введите название карты (level):")
+print("формат ввода: level.txt")
 filename = input()
 
 
