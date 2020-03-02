@@ -115,7 +115,6 @@ except:
                 terminate()
         pygame.display.flip()
         clock.tick(fps)
-load_level('level.txt')
 tile_images = {'wall': load_image('box.png'), 'empty': load_image('grass.png')}
 player_image = load_image('mario.png')
 tile_width = tile_height = 50
@@ -124,7 +123,6 @@ player = None
 all_sprites = pygame.sprite.Group()
 tiles_group = pygame.sprite.Group()
 player_group = pygame.sprite.Group()
-level = load_level('level.txt')
 player, level_x, level_y = generate_level(level)
 while True:
     screen.fill((0, 0, 0))
